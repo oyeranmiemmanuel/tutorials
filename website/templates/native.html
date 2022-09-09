@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>womens-wear </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="text/javascript" src="jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="htts://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/womens-wear.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/product.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/womens-wear.css')}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+<script src="mens-wear.js"></script>
+<script src="womens-wear-query.js"></script>
+</head>
+
+
+<body>
+<nav> 
+        <div class="logo">
+          <h3><a href="merlin.html" class="logo-name">Alarafa Stiches</a></h3>
+        </div>
+
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/packs">Branding & Packaging</a></li>
+            <li><a href="/childrens">Childrens</a></li>
+            <li><a href="/contact">ContactUs</a></li>
+            <li><a href="/fashions">Products</a></li>  
+            <li><a href="/hoodie">Hoodies</a></li>
+            <li><a href="/womens-wear">Ladies</a></li>
+            <li><a href="/mens-wear">Mens</a></li>
+            <li><a href="/short-nickers">Short-Trousers</a></li>
+            <li><a href="/sleeves">Unisex Long & Short Sleeves</a></li>        
+            <li><a href="/trousers">Unisex Trousers</a></li>
+            {%if current_user.is_authenticated%}
+				<li><a href="/login">Sign Out</a></li>
+				<li><a href="/my-items">My Items</a></li>
+            {%else%}
+            	<li><a href="/sign-up">Create Account</a></li>
+            {%endif%}
+        </ul>
+		
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+
+<h3 class="choice"> Ladies Native </h3>
+
+
+ <center><p class="msg-ps">
+        <span class="colored-word">Click</span> on the product to add in your shopping list.
+        <br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+      </p></center>
+<div class="layout">
+	<div class="image-container">
+		<img src="/static/css/pictures/native/ladies-native (1).png" id="Flyiard Gown || #3,000 " onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (2).png" id="A Shape Gown || #4,000 "alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (3).png" id="Short Free Gown || #4,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (4).png" id="Brown A Shape Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (5).png" id="Double Color Free Gown || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (6).png" id="Multi Color Free Gown || #4,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (7).png" id="Attractive Mixed Color Free Gown || #4,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (8).png" id="Mini Free Gown || #4,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (9).png" id="Smoking  Gown Design || #3,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (10).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (11).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (12).png" id="White Jacket and Trouser || #6,000"alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (13).png" id="Full Yellow Gown || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (14).png" id="Pure White 6 pieces Agbada || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (15).png" id="Light Blue Skirt and Blouse || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (16).png" id="Pure White 6 Pieces Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (17).png" id="Yello Skirt and Blouse || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (18).png" id="Blue and White Staight Gown Design || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (19).png" id="Lemon Green Skirt and Blouse  || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (20).png" id="Long Purple Straight Gown || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (21).png" id="Navy Blue Long Free Gown || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (22).png" id="Flower Material Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (23).png" id="Simple Blue With Yellow Design Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (24).png" id="Simple Style Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (25).png" id="Special Attire Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (26).png" id="Thiny Arm Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (27).png" id="Armless Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (28).png" id="Red and  Wine  Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (29).png" id="Simple Style Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (30).png" id="Attractive Style Free Gown || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (31).png" id="Free Gown || #5,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (32).png" id=" " alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (33).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (34).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (35).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container">
+		<img src="/static/css/pictures/native/ladies-native (36).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (37).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (38).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+	<div class="image-container" >
+		<img src="/static/css/pictures/native/ladies-native (39).png" id="Top With Jogger Trouser || #6,000" alt="" onclick="add(this.id)">
+	</div>
+
+
+</div>
+
+ 
+
+
+
+<h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+	<div class="cart-details">
+          <h2 class="head-of-cart">Your Cart</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+        <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word"> Clear My List</span></button> <button class="btn-clear-list" id="copyText" onclick="copyText()"> <span class="colored-word"> Copy Your List </span></button> 
+        <br>
+
+ {% if current_user.is_authenticated%}
+<h2 class="paste">Paste Your Item In the Area Below and click submit to Save in your cart </h2>
+
+<form method="POST">
+
+			<textarea name="item" cols="30" rows="5" class="add-to-db" 
+			placeholder="paste your favorite items here"></textarea>
+				<br>
+			<button type="submit" class="submit">Save</button>
+			</form>
+
+
+			
+          <small>Can't see anything? Click & add your favorite fashion in
+          <span class="colored-word"> Shopping List!</span> </small>
+    </div>
+
+
+{%else%}
+		<h2 class="paste">Create an account to get a permanent cart storage </h2>
+
+ {%endif%}
+
+
+    	<br>
+
+<footer>
+<div class="foot-bar">
+<div class="foot-icon">
+	<a href="www.facebook.com/kolapo.azeez.50"><div class="icon"><img src="/static/css/pictures/icons/facebook.png"></div></a>
+	<a href="#"><div class="icon"><img src="/static/css/pictures/icons/instagram1.jpg"/></div></a>
+	<a><div class="icon"><img src="/static/css/pictures/icons/whatsapp1.jpg"/></div></a>
+	<a><div class="icon"> <img src="/static/css/pictures/icons/gmail.jpg" /></div></a>
+
+</div>
+</div>
+<p class="contact" > contact us on: 09025272830 or 09157289262 </p>
+</footer>
+
+
+<div class="about-center">
+	<div class="info">
+	<h1> how can we help </h1>
+	<a href="/not-available"> help </a>
+	<a href="/size-guides"> size guides </a>
+	<a href="/not-available"> Discount & promo </a>
+	
+	</div>
+
+	<div class="info">
+	<h1> information</h1>
+	 <a href='/not-available'> 2022 fashion </a>
+	<a href='/not-available'> deleivery informaton </a>
+	<a href='/not-available'> refer a friend </a>
+	</div>
+
+	<div class="info">
+	<h1> about us & more </h1>
+	<a href='/not-available'> About AF </a>
+	<a href='/not-available'>Size guides </a>
+	<a href='/not-available'> Discount & promo </a>
+	</div>
+</div>
+
+
+
+<script src="{{url_for('static', filename='js/womens-wear.js')}}"></script>
+<script src="{{url_for('static', filename='js/nav.js')}}"></script>
+
+</body>
+</html>

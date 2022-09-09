@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>
+        Size Review</title>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="size_guides.css">
+    
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/size_guides.css')}}">
+
+<body>
+    <nav>
+        <div class="logo">
+          <h3><a href="#" class="logo-name">Alarafa Stiches</a></h3>
+        </div>
+  
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/packs">Branding & Packaging</a></li>
+            <li><a href="/childrens">Childrens</a></li>
+            <li><a href="/contact">ContactUs</a></li>
+            <li><a href="/fashions">Products</a></li>  
+            <li><a href="/hoodie">Hoodies</a></li>
+            <li><a href="/womens-wear">Ladies</a></li>
+            <li><a href="/mens-wear">Mens</a></li>
+            <li><a href="/short-nickers">Short-Trousers</a></li>
+            <li><a href="/sleeves">Unisex Long & Short Sleeves</a></li>        
+            <li><a href="/trousers">Unisex Trousers</a></li>
+                {%if current_user.is_authenticated%}
+            <li><a href="/log-out">Sign Out</a></li>
+                {%else%}
+            <li><a href="/sign-up">Create Account</a></li>
+                {%endif%}
+        </ul>
+        
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+
+<center>
+    
+<h1> Size Selection Guidelines</h1>
+</center>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th colspan="3"> Check For Your Speific Size </th>
+        </tr>
+        <tr>
+            <td>Gender & Age</td>
+            <td>Height</td>
+            <td>Width</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr> 
+            <td> Children Of Age 2-5</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>
+        <tr> 
+            <td> Kids Age 5-8</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>        <tr> 
+            <td> Boys 8-12</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>        <tr> 
+            <td> Boys Age 12-15</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>        <tr> 
+            <td> Boys Of Age 15- 20</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>        <tr> 
+            <td> Men Of Age 20-25</td>
+            <td> 12</td>
+            <td> 15 </td>
+        </tr>
+    </tbody>
+    
+</table>
+<!-- <button onclick="downloadUsingAnchorElement()"> download Here</button>
+<h2> click here to <a  onclick=""><span> download</span></a> the size for men</h1> -->
+    <h2> click here to <a href="/static/css/size_guides/GENERAL_CLOTHING_SIZE_GUIDE.pdf" download ><span> download</span></a> the general size for men & women</h1>
+        <h2> click here to <a href="/static/css/size_guides/Scimitar_Size_Chart_Alzheimers_V1.0.pdf" download ><span> download</span></a> Unisex Size </h1>
+
+
+
+            <script src="{{url_for('static', filename='js/nav.js')}}"></script>
+            <script src="{{url_for('static', filename='js/womens-wear.js')}}"></script>
+            <script src="{{url_for('static', filename='js/size_guide.js')}}"></script>
+
+</body>
+</html>

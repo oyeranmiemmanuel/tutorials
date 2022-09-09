@@ -1,0 +1,333 @@
+body{
+	box-sizing: border-box;
+}
+
+.title{
+	width: 100%;
+	display: flex;
+	height: 30px;
+	background: black;
+	padding: 20px;
+	flex-direction: row;
+	justify-content: center;
+	content: border-box;
+
+}
+.button{
+	width: 15%;
+	}
+.title > div{
+	height: auto;
+	color: white;
+	margin-right: 10px;
+}
+.btn{
+	color: black;
+	background: white;
+	width: 80px;
+	height: 40px;
+	font-family: verdana;
+}
+
+.name {
+	width: 50%;
+	font-size: 30px;
+	margin: auto;
+	position: relative;
+	top: -30px;
+	
+}
+.name > h1{
+	font-size: 40px; 
+	color: white;
+	font-family: verdana;
+	font-weight: bolder;
+	
+}
+.search{
+	width: 20%
+}
+.more {
+	width: 20%;
+}
+.gift{
+	width: 20%;
+}
+
+.native{
+	margin: auto;
+	text-decoration: none;
+	color: red;
+	height: 25px;
+	padding: 7px;
+}
+.native:hover{
+	background: pink;
+}
+
+.show-room{
+	width: 30%;
+	height: auto;
+	background: black;
+	padding: 10px;
+	padding-top: 20px;
+	border: 5px solid white;
+	position: fixed;
+	border-radius: 5px;
+	display: none;
+}
+.close:hover{
+	background: black;
+	color: white;
+}
+.close{
+	float: right;
+	color: black;
+	background: white;
+	width: 30px;
+	padding: 5px;
+	border: 5px solid groove;
+}
+.content{
+	background: transparent;
+	height: auto;
+}
+.content > a {
+	border: 2px solid white;   
+    border-radius: 5px;
+	display: block; 
+	padding: 10px;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	background: white;
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+	font-family: cursive, Apple Chancery;
+	text-align: center;
+}
+.content > a:hover{
+	background: black;
+    color: white;
+}
+.choice{
+	
+	font-weight: bolder;
+	font-size: 30px;
+	color: red;
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 150px;
+}
+
+.msg-ps{
+  color:black;
+}
+.layout{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.layout > div {
+	width: 200px;
+	border: 2px solid red;
+	margin: 20px;
+	height: 200px;
+
+}
+.layout div:hover{
+	cursor: pointer;
+}
+.image-container > img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.cart-details{
+  padding-left:50px;
+}
+.cart-details li{
+  list-style-type:decimal;
+}
+.head-of-cart{
+  color:#f84258;
+
+}
+.hr-of-cart-head{
+  border: 1px solid black;
+  width:120px;
+}
+.msg-ps{
+  color:black;
+}
+.last-hr-of-product{
+  border: 1px solid black;
+  width:70%;
+}
+.btn-clear-list{
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+  background: none;
+  border:none;
+}
+.btn-clear-list:hover{
+  background-color: #ece3e3;
+}
+.ul_pr li{
+  font-size:18px;
+}
+.btn-of-img{
+  border:none;
+  position: absolute;
+}
+.sry-msg{
+  color:black;
+  text-align:center;
+  padding-bottom:20px;
+} 
+
+
+.colored-word{
+  color:#f84258;
+}
+.colored-word-bigger-size{
+  color:#f84258;
+  font-size:35px;
+}
+.bigletter{ 
+  font-size: 80px;
+}
+
+#copyText{
+	margin-left: 40px;
+}
+footer{
+	background: lightgreen;
+	width: 55%;
+	height: 100px;
+	margin: auto;
+	padding: 10px;
+	border-radius:  10px;
+}
+.foot-icon{
+	display: flex;
+	background: green;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+}
+.foot-icon > a{
+	margin: 5px;
+}
+.foot-icon > div{
+	border-radius: 20px;
+	background: red;
+	margin: 10px;
+	height: 30px;
+	width: 30px;
+}
+.icon img:hover{
+	width: 35px;
+	height: 35px;
+}
+.icon > img {
+	border-radius: 20px;	
+	height: 30px;
+	width: 30px;
+}
+.contact{
+	font-size: 15px;
+	font-family: monospace, Lucida Console;
+	font-weight: bold;
+	text-align: center;
+    color: white;
+	background:  lightgreen;
+}
+
+.about-center{
+    display: flex;
+    width: 100%;
+    
+}
+.about-center > div {
+    width: 30%;
+    color: none;
+    text-align: center;
+}
+
+.info > h1 {
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: titlecase;
+ }
+ .info > a {
+	 font-family: sans-serif;
+	 font-size: 13px;
+	 color: black;
+	 text-decoration: none;
+	 display: block;
+	 margin: 5px;
+ }
+ .info > a:hover{
+	 text-decoration: underline;
+ }
+@media screen and (max-width:768px){
+.layout > div {
+	width: 120px;
+	border: 2px solid lime;
+	margin: 10px;
+	height: 150px;
+
+}
+.about-center{
+	width: 100%;
+}
+.about-center > div {
+	width: 30%;
+	margin: 10px;
+}
+	.choice{
+		font-size: 20px;
+	}
+footer{
+	width: 80%;
+
+}
+
+
+}
+
+#items{
+	height: 15px;
+	width: 20px;
+	border: 5px solid groove;
+	padding: 10px;
+}
+
+.submit{
+	color: white;
+	background: black;
+	padding: 10px;
+}
+
+
+.paste{
+	font-size: 15px;
+	font-family: cursive;
+}
+
+
+
+.add-to-db{
+	padding: 10px;
+	display: inline;
+	height: 100%;
+	border-radius: 10px;
+}

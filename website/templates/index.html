@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>
+Alarafa Stiches
+</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="banner-img"> </div>
+
+	<div class="banner-text">
+		{%if current_user.is_authenticated%}
+		<p> Welcome {{current_user.email}} </p>
+		{%endif%}
+	<h3> Alarafa Stiches </h3>
+	<p class="text"> <span>We're Specialised in sewing, Branding and Delievering of: </span> </br> "Mens wear, Ladies wear, Childrens wear, Uniform, Joggers,
+Vest, Trousers, 3D Submission, Gift Items, General Printing, Monogram, Throw Pillow, Customizing, Frame-Making" also we give maximun safisfaction to our customers </p>
+	<a href="/mens-wear"> Mens Wear </a>
+	<a href="/womens-wear"> Womens Wear </a>
+	<a href="/fashions"> Show Room </a>
+
+	</div>
+
+
+	<script src="{{url_for('static', filename='js/sign-up.js')}}"></script>
+
+</body>
+</html>

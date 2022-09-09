@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>children </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/womens-wear.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/product.css') }}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/womens-wear.css')}}">
+</head>
+
+<body>
+
+<nav> 
+        <div class="logo">
+          <h3><a href="merlin.html" class="logo-name">Alarafa Stiches</a></h3>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/packs">Branding & Packaging</a></li>
+            <li><a href="/childrens">Childrens</a></li>
+            <li><a href="/contact">ContactUs</a></li>
+            <li><a href="/fashions">Products</a></li>  
+            <li><a href="/hoodie">Hoodies</a></li>
+            <li><a href="/womens-wear">Ladies</a></li>
+            <li><a href="/mens-wear">Mens</a></li>
+            <li><a href="/short-nickers">Short-Trousers</a></li>
+            <li><a href="/sleeves">Unisex Long & Short Sleeves</a></li>        
+            <li><a href="/trousers">Unisex Trousers</a></li>
+            {%if current_user.is_authenticated%}
+				<li><a href="/log-out">Sign Out</a></li>
+            {%else%}
+            	<li><a href="/sign-up">Create Account</a></li>
+            	<li><a href="/login">Login</a></li>
+            {%endif%}
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+<h3 class="choice"> Children Outfit </h3>
+<center><p class="msg-ps">
+	<span class="colored-word">Click</span> on the product to add in your shopping list.
+	<br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+  </p></center>
+
+<div class="layout">
+	<div class="image-container">
+		<img src="/static/css/pictures/children/children (1).jpeg" id="Kiddies- Long Hoodie || #3, 000" onclick="add(this.id)">
+	</div>
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (2).jpeg" id="Kiddies- Black Long Hoodie || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (3).jpeg" id="Kiddies-Multicolor Top || #2,500" onclick="add(this.id)">
+	</div>
+    	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (4).jpeg" id="Kiddies-White Top || #2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (5).jpeg" id="Kiddies-Short Red Top ||#2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (6).jpeg" id="Kiddies-Long Sleeve With Trouser|| #4,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (7).jpeg" id="Kiddies-Hash Long Jacket With Trouser || #5,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (8).jpeg" id="Kiddies-Packed Short Top With Trouser || #5,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (9).jpeg" id="Kiddies-Hash Long Jacket || #2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (10).jpeg" id="Kiddies-White Top || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (11).jpeg" id="Kiddies-Long Blue Hoodie || #3,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (12).jpeg" id="Kiddies-Jacket With Hoodie Cap || #4,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (13).jpeg" id="Kiddies-Multicolor Polo Top || #2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (14).jpeg" id="Kiddies-Multicolor Polo Top || #2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (15).jpeg" id="Kiddies-Multicolor Polo Long Top || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (16).jpeg" id="Kiddies-Multicolor With Logo || #2,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (17).jpeg" id="Kiddies-Double Pack Polo Shirt || #5,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (18).jpeg" id="Kiddies-Blue Polo Shirt || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (19).jpeg" id="Kiddies-Flashy FashionShirt  || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (20).jpeg" id="Kiddies-Yellow$Blue MixturePolo Shirt  || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (21).jpeg" id="Kiddies-Black Jogger || #3,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (22).jpeg" id="Kiddies-Blue Hoodie With Trouser ||#5,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container"> 
+		<img src="/static/css/pictures/children/children (23).jpeg" id="Kiddies-Mixedcolor Sleeve With Trouser ||#5,500" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (24).jpeg" id="Kiddies-Pink Hoodie Trouser||#5,000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (25).jpeg" id="Kiddies-Soft Wool Jogger || #3, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (26).jpeg" id="Kiddies-Harsh Long Sleeve With Trouser ||#5, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (27).jpeg" id="Kiddies-Long Louis Viutton Hoodie Design With Trouser ||#6, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (28).jpeg" id="Kiddies- 4 in 1 Pack With Different Color || #8, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (29).jpeg" id="Kiddies- White Top With Soft Cutton Trouser || #5, 000" onclick="add(this.id)">
+	</div>	
+    <div class="image-container">
+		<img src="/static/css/pictures/children/children (30).jpeg" id="Kiddies- Soft Jogger || #3, 000" onclick="add(this.id)">
+	</div>
+	
+</div>
+
+<h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+	<div class="cart-details">
+          <h2 class="head-of-cart">Your Cart</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+        <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word"> Clear My List</span></button>   <button class="btn-clear-list" id="copyText" onclick="copyText()"> <span class="colored-word"> Copy Your List </span></button>  <br>  
+
+
+ {% if current_user.is_authenticated%}
+<h2 class="paste">Paste Your Item In the Area Below and click submit to Save in your cart </h2>
+
+<form method="POST">
+
+			<textarea name="item" cols="30" rows="5" class="add-to-db" 
+			placeholder="paste your favorite items here"></textarea>
+				<br>
+			<button type="submit" class="submit">Save</button>
+			</form>
+
+
+			
+          <small>Can't see anything? Click & add your favorite fashion in
+          <span class="colored-word"> Shopping List!</span> </small>
+    </div>
+
+{%else%}
+		<h2 class="paste">Create an account to get a permanent cart storage </h2>
+
+{%endif%}
+
+
+    	<br>
+
+
+
+<footer>
+<div class="foot-bar">
+<div class="foot-icon">
+	<a href="www.facebook.com/kolapo.azeez.50"><div class="icon"><img src="/static/css/pictures/icons/facebook.png"></div></a>
+	<a href="#"><div class="icon"><img src="/static/css/pictures/icons/instagram1.jpg"/></div></a>
+	<a><div class="icon"><img src="/static/css/pictures/icons/whatsapp1.jpg"/></div></a>
+	<a><div class="icon"> <img src="/static/css/pictures/icons/gmail.jpg" /></div></a>
+
+</div>
+</div>
+<p class="contact" > contact us on: 09025272830 or 09157289262 </p>
+</footer>
+</br>
+</br>
+</br>
+
+<div class="about-center">
+	<div class="info">
+	<h1> how can we help </h1>
+	<a href="/not-available"> help </a>
+	<a href="/size-guides"> size guides </a>
+	<a href="/not-available"> Discount & promo </a>
+	
+	</div>
+
+	<div class="info">
+	<h1> information</h1>
+	 <a href='/not-available'> 2022 fashion </a>
+	<a href='/not-available'> deleivery informaton </a>
+	<a href='/not-available'> refer a friend </a>
+	</div>
+
+	<div class="info">
+	<h1> about us & more </h1>
+	<a href='/not-available'> About AF </a>
+	<a href='/size-guides'>Size guides </a>
+	<a href='/not-available'> Discount & promo </a>
+	</div>
+</div>
+<script src="{{url_for('static', filename='js/website.js')}}"></script>
+<script src="{{url_for('static', filename='js/nav.js')}}"> </script>
+<script src="{{url_for('static', filename='js/womens-wear.js')}}"> </script>
+</body>
+</html>

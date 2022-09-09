@@ -1,0 +1,120 @@
+*{
+	box-sizing: border-box;
+	
+}
+body,html{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: arial
+}
+.banner-text>h3{
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 0;
+	color: crimson;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#message{
+	background: rgb(130, 223, 130);
+	padding: 10x;
+}
+
+#message > button{
+	color: rgb(41, 216, 18);
+	background: rgb(223, 82, 82);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.banner-img{
+	background-image: url('pictures/packs/pack.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+	filter: blur(5px)
+}
+.banner-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	width: 50%;
+	height: 60%;
+	padding: 40%, 20%;
+	text-align: center;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	font-weight: bold;
+	border: 10px inset #fff;
+	
+	
+}
+
+
+.banner-text > p{
+	padding: 0 8%;
+	font-family: cursive;
+	font-size: 15px;
+	color: gold;
+}
+a{
+	display: inline-block;
+	padding: 10px 50px;
+	border: 2px solid #fff;
+	font-size: 15px;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 15px;
+	font-family: monospace;
+}
+a:hover{
+	background: black;
+	color: white;
+}
+span{
+	color: rgb(0, 255, 0);
+	font-family: monospace;
+	font-size: 20px;
+}
+@media screen and (max-width:768px){
+	.banner-text{
+			width: 80%;
+			height: 80%;
+			border-color: purple;
+		}
+	.banner-text > p{
+		font-size: black;
+	}
+	h1{
+		font-size: 30px;
+		color: purple;
+	}
+	span{
+		font-size: 18px;
+		color: red;
+		background-color: rgb(233, 213, 100);
+	}	
+	a{
+		padding: 5px 5px;
+		font-size: 11px;
+		margin: 5px;
+		border-color: brown;
+	}
+	a:hover {
+		background-color: purple;
+	}
+	.banner-text > h3{
+		font-size: 30px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	
+}

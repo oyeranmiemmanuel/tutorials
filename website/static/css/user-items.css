@@ -1,0 +1,25 @@
+body{
+	box-sizing: border-box;
+}
+
+.table-items{
+	padding: 5px;
+	margin: auto;
+	background: ;
+	border:  5px solid green;
+	border-color: red;
+	border-radius: 5px;
+}
+
+.item-category, .item-date, .items{
+	padding:  5px;
+	color: white;
+	margin: auto;
+	background: black;
+	align-text: center;
+	border-bottom: 5px groove red;
+}
+
+p{
+	font-family: cursive;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>                             
+        <title>
+            Create account
+        </title>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/sign-up.css')}}">
+    </head>
+
+<body>
+
+    <div class="sign-up">
+        {% with messages= get_flashed_messages(with_categories=true) %}
+        {%if messages%}
+            {%for category, message in messages%}
+            {%if category == 'error'%}
+            <center>
+                <div class="error" id="message" > 
+                    <h2>There's an error while submitting the form please recheck</h2>
+                    <p> {{message}} </p>              
+                    <button class="close"  onclick="hide()">Close</button> 
+  
+                </div>
+            </center>
+            {%else%}
+                <center>
+                <div class="success" id="message"> 
+                    <h1>Account Created Successfully </h1>
+                    <p> {{message}} </p>
+                    <button class="close" onclick="hide()">Close</button> 
+                </div>
+            </center>
+            {%endif%}
+
+            {%endfor%}
+
+        {%endif%}
+        {%endwith%}
+        <center>
+        <h1 style="color: red;"> new text </h1>
+    </center>
+        <h1 align="center" style="color: white; ">Sign Up</h1>
+        <form method="POST" class="form" >
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <br/>
+                <input type="email" 
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"/>
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name: </label>
+                <br/>
+                <input type="text" 
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Enter first Name"/>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">Last Name: </label>
+                <br/>
+                <input type="text" 
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Enter Last Name"/>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone No: </label>
+                <br/>
+                <input type="text" 
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="Phone No"/>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <br/>
+                <input type="password" 
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"/>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Confirm Password: </label>
+                <br/>
+                <input type="password" 
+                        class="form-control"
+                        id="password1"
+                        name="password1"
+                        placeholder="Confirm password"/>
+            </div>
+            <br/>
+
+            <button type="submit" class="submit"> Submit </button>
+            <br/>
+
+            <p>Already have an account</p>
+            <a href="/login">Log In </a>
+            
+
+
+
+            
+
+        </form>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    </div>
+
+    <script src="{{url_for('static', filename='js/sign-up.js')}}"></script>
+
+</body>
+</html>

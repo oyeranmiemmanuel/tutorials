@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fashion Display </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/womens-wear.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/fashions.css')}}">
+	<!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+
+
+</head>
+
+
+<body>
+
+<div class="title">
+<div class="row">
+
+<button type="button" id="option" onclick="show()"><i class="glyphicon glyphicon-grid"></i> </button>
+</div>
+<div class="rows">
+<h1> Our Products Show Room </h1>
+</div>
+<div class="anchor" id="anchor">
+	<a href="/">Home</a>            
+	<a href="/packs">Branding & Packaging</a>
+	<a href="/childrens">Childrens</a>
+	<a href="/contact">ContactUs</a>
+	<a href="/fashions">Products</a>  
+	<a href="/hoodie">Hoodies</a>
+	<a href="/womens-wear">Ladies</a>
+	<a href="/mens-wear">Mens</a>
+	<a href="/short-nickers">Short-Trousers</a>
+	<a href="/sleeves">Unisex Long & Short Sleeves</a>             
+	<a href="/trousers">Unisex Trousers</a>
+            {%if current_user.is_authenticated%}
+				<a href="/login">Sign Out</a>
+				<a href="/my-items">My Items</a>
+            {%else%}
+            	<a href="/sign-up">Create Account</a>
+            {%endif%}
+	</div>
+
+</div> 
+
+<div class="slidercontainer">
+	<div class="showSlide fade"> 
+		<img src="/static/css/slide-show/first.jpg" />
+	</div>
+	<div class="showSlide fade"> 
+		<img src="/static/css/slide-show/second.jpg" />
+	</div>
+	<div class="showSlide fade"> 
+		<img src="/static/css/slide-show/first.jpg" />
+	</div>
+	<div class="showSlide fade"> 
+		<img src="/static/css/slide-show/second.jpg" />
+	</div>
+
+	<a class="left" onclick="nextSlide(-1)"> Prev </a>
+	<a class="right" onclick="nextSlide(1)"> Next </a>
+
+</div>
+
+<div class="layout">
+	
+	<a href="mens-wear.html" class="href" >	
+	<div class="image-container" >
+		<img src="/static/css/pictures/mens-wear/mens-wear.jpg" class="image"/> 
+	</div>
+</a>
+<a href="hoodie.html" class="href" >	
+	<div class="image-container" >
+		<img src="/static/css/pictures/hoodie/hoodie (2).jpg" class="image"/>
+	</div>
+</a>
+<a href="womens-wear.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/ladies/ladies-wear (2).jpg" class="image"/>
+	</div>
+</a>
+<a href="trousers.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/long-trouser/long-trouser.jpg" class="image"/>
+	</div> 
+</a>
+<a href="packs.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/packs/pack.jpg" class="image"/>
+	</div>
+
+	<a href="mens-wear.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/mens-wear/mens-wear (6).jpg" class="image"/>
+	</div> 
+</a>
+
+<a href="hoodie.html" class="href" >
+	<div class="image-container" >
+		<img src="/static/css/pictures/hoodie/hoodie (3).jpg" class="image"/>
+	</div>
+</a>
+<a href="hoodie.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/jacket/jacket.jpg" class="image"/>
+	</div>
+</a>
+
+<a href="womens-wear.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/ladies/ladies-wear (6).jpg" class="image"/>
+	</div> 
+</a>
+<a href="trousers.html" class="href" >
+	<div class="image-container" >
+		<img src="/static/css/pictures/short-nickers/short-nickers.jpg" class="image"/>
+	</div>
+
+	<a href="packs.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/packs/pack (5).jpg" class="image"/>
+	</div>
+</a>
+
+<a href="packs.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/couples/couples (3).jpg" class="image"/>
+	</div> 
+</a>
+
+<a href="hoodie.html" class="href" >
+	<div class="image-container" >
+		<img src="/static/css/pictures/hoodie/hoodie (6).jpg" class="image"/>
+	</div>
+</a>
+
+<a href="trousers.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/short-nickers/short-nickers.jpg" class="image"/>
+	</div>
+</a>
+
+<a href="womens-wear.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/ladies/ladies-wear (10).jpg" class="image"/>
+	</div> 
+</a>
+
+<a href="hoodie.html" class="href" >
+	<div class="image-container" >
+		<img src="/static/css/pictures/hoodie/hoodie (8).jpg" class="image"/>
+	</div>
+</a>
+
+<a href="packs.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/packs/pack (5).jpg" class="image"/>
+	</div>
+</a>
+
+<a href="packs.html" class="href" >
+	<div class="image-container">
+		<img src="/static/css/pictures/couples/couples (3).jpg" class="image"/>
+	</div> 
+</a>
+</div>
+
+ 
+
+</div>
+
+<h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        {% with messages= get_flashed_messages(with_categories=True)%}
+        {%if messages%}
+        	{%for category, message in messages%}
+        		{%if category == 'error'%}
+        		<center>
+        		<p style='color:red'> {{message}} </p>
+        		{%endif%}
+        	</center>
+        	{%endfor%}
+        {%endif%}
+        {%endwith%}
+        <center>
+        {% for comment in comments[-5:] %}
+	<div class="comment">
+		<p style='font-family: cursive;'> {{comment}} </p>
+		<p style="font-family: cursive; font-size: 10px" > from {{comment.user_id}} </p>
+	</div>
+		{%endfor%}
+
+        <form method="POST">
+
+
+	<p> Comment Here <p>
+	<textarea name='comment' expandable=False rows="60" cols="30" id="comment"></textarea>
+	<button type="submit" onclick="validate()">submit</button>
+		</form>                                          
+
+		<center>
+<br>
+<footer>
+<div class="foot-bar">
+<div class="foot-icon">
+	<a href="www.facebook.com/kolapo.azeez.50"><div class="icon"><img src="/static/css/pictures/icons/facebook.png"></div></a>
+	<a href="#"><div class="icon"><img src="/static/css/pictures/icons/instagram1.jpg"/></div></a>
+	<a><div class="icon"><img src="/static/css/pictures/icons/whatsapp1.jpg"/></div></a>
+	<a><div class="icon"> <img src="/static/css/pictures/icons/gmail.jpg" /></div></a>
+
+</div>
+</div>
+<p class="contact" > contact us on: 09025272830 or 09157289262 </p>
+</footer>
+</br>
+</br>
+<div class="about-center">
+	<div class="info">
+	<h1> how can we help </h1>
+	<a href="/not-available"> help </a>
+	<a href="/size-guides"> size guides </a>
+	<a href="/not-available"> Discount & promo </a>
+	
+	</div>
+
+	<div class="info">
+	<h1> information</h1>
+	 <a href='/fashion'> 2022 fashion </a>
+	<a href='/not-available'> deleivery informaton </a>
+	<a href='/not-available'> refer a friend </a>
+	</div>
+
+	<div class="info">
+	<h1> about us & more </h1>
+	<a href='/not-available'> About AF </a>
+	<a href='size-guides'>Size guides </a>
+	<a href='/not-available'> Discount & promo </a>
+	</div>
+</div>
+
+
+
+<script src="{{url_for('static', filename='js/fashion.js')}}"></script>
+
+
+</body>
+</html>

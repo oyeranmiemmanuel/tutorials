@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/log_in.css')}}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/sign-up.css')}}"> -->
+    </head>
+<body>
+
+
+            <h1>Log In</h1>
+            
+
+            <form method="POST">
+                <div class="form-group">
+                    <label for="text">Enter Username: </label>
+                    <input type="email" 
+                        class="userName"
+                        id="userName"
+                        name="userName"
+                        placeholder="Enter email"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <br/>
+                    <input type="password" 
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            placeholder="Enter password"/>
+                </div>
+                <button type="submit" name="submit">Login</button>
+            </br>
+            </br>
+                <a href="/forget-password">Forgot Password?</a>
+                <p>Not yet a member?</p>
+            <a href="/sign-up">Sign Up </a>
+            </form>
+            
+            <script src="{{url_for('static', filename='js/sign-up.js')}}"></script>
+</body>
+</html>
