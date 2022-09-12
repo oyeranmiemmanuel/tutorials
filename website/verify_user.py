@@ -64,7 +64,8 @@ def create_account():
             user=User( username=firstName, email=email, password=password, last_name=lastName, phone=phone_no, hashed=hash)
             db.session.add(user)
             db.session.commit()
-            login_user(user, remember=True)
+            user1= user1= User.query.filter_by(email=email).first() 
+            login_user(user1, remember=True)
             return True
 
 

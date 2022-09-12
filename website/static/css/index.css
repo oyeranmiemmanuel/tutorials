@@ -92,13 +92,14 @@ span{
 		}
 	.banner-text > p{
 		font-size: black;
+		font-size: 12px;
 	}
 	h1{
 		font-size: 30px;
 		color: purple;
 	}
 	span{
-		font-size: 18px;
+		font-size: 13px;
 		color: red;
 		background-color: rgb(233, 213, 100);
 	}	

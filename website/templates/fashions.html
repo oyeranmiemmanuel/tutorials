@@ -40,7 +40,7 @@
 	<a href="/sleeves">Unisex Long & Short Sleeves</a>             
 	<a href="/trousers">Unisex Trousers</a>
             {%if current_user.is_authenticated%}
-				<a href="/login">Sign Out</a>
+				<a href="/log-out">Sign Out</a>
 				<a href="/my-items">My Items</a>
             {%else%}
             	<a href="/sign-up">Create Account</a>
@@ -70,101 +70,101 @@
 
 <div class="layout">
 	
-	<a href="mens-wear.html" class="href" >	
+	<a href="/mens-wear" class="href" >	
 	<div class="image-container" >
 		<img src="/static/css/pictures/mens-wear/mens-wear.jpg" class="image"/> 
 	</div>
 </a>
-<a href="hoodie.html" class="href" >	
+<a href="/hoodie" class="href" >	
 	<div class="image-container" >
 		<img src="/static/css/pictures/hoodie/hoodie (2).jpg" class="image"/>
 	</div>
 </a>
-<a href="womens-wear.html" class="href" >
+<a href="/womens-wear" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/ladies/ladies-wear (2).jpg" class="image"/>
 	</div>
 </a>
-<a href="trousers.html" class="href" >
+<a href="/trousers" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/long-trouser/long-trouser.jpg" class="image"/>
 	</div> 
 </a>
-<a href="packs.html" class="href" >
+<a href="/packs" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/packs/pack.jpg" class="image"/>
 	</div>
 
-	<a href="mens-wear.html" class="href" >
+	<a href="/mens-wear" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/mens-wear/mens-wear (6).jpg" class="image"/>
 	</div> 
 </a>
 
-<a href="hoodie.html" class="href" >
+<a href="/hoodie" class="href" >
 	<div class="image-container" >
 		<img src="/static/css/pictures/hoodie/hoodie (3).jpg" class="image"/>
 	</div>
 </a>
-<a href="hoodie.html" class="href" >
+<a href="/hoodie" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/jacket/jacket.jpg" class="image"/>
 	</div>
 </a>
 
-<a href="womens-wear.html" class="href" >
+<a href="/womens-wear" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/ladies/ladies-wear (6).jpg" class="image"/>
 	</div> 
 </a>
-<a href="trousers.html" class="href" >
+<a href="/trousers" class="href" >
 	<div class="image-container" >
 		<img src="/static/css/pictures/short-nickers/short-nickers.jpg" class="image"/>
 	</div>
 
-	<a href="packs.html" class="href" >
+	<a href="/packs" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/packs/pack (5).jpg" class="image"/>
 	</div>
 </a>
 
-<a href="packs.html" class="href" >
+<a href="/packs" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/couples/couples (3).jpg" class="image"/>
 	</div> 
 </a>
 
-<a href="hoodie.html" class="href" >
+<a href="/hoodie" class="href" >
 	<div class="image-container" >
 		<img src="/static/css/pictures/hoodie/hoodie (6).jpg" class="image"/>
 	</div>
 </a>
 
-<a href="trousers.html" class="href" >
+<a href="/trousers" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/short-nickers/short-nickers.jpg" class="image"/>
 	</div>
 </a>
 
-<a href="womens-wear.html" class="href" >
+<a href="/womens-wear" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/ladies/ladies-wear (10).jpg" class="image"/>
 	</div> 
 </a>
 
-<a href="hoodie.html" class="href" >
+<a href="/hoodie" class="href" >
 	<div class="image-container" >
 		<img src="/static/css/pictures/hoodie/hoodie (8).jpg" class="image"/>
 	</div>
 </a>
 
-<a href="packs.html" class="href" >
+<a href="/packs" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/packs/pack (5).jpg" class="image"/>
 	</div>
 </a>
 
-<a href="packs.html" class="href" >
+<a href="/packs" class="href" >
 	<div class="image-container">
 		<img src="/static/css/pictures/couples/couples (3).jpg" class="image"/>
 	</div> 
@@ -178,7 +178,7 @@
 <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
         <center><hr class="last-hr-of-product"></center>
         <br><br>
-
+       {%if current_user.is_authenticated%}
         {% with messages= get_flashed_messages(with_categories=True)%}
         {%if messages%}
         	{%for category, message in messages%}
@@ -191,9 +191,10 @@
         {%endif%}
         {%endwith%}
         <center>
+
         {% for comment in comments[-5:] %}
 	<div class="comment">
-		<p style='font-family: cursive;'> {{comment}} </p>
+		<p style='font-family: cursive; font-size: 13px'> {{comment}} </p>
 		<p style="font-family: cursive; font-size: 10px" > from {{comment.user_id}} </p>
 	</div>
 		{%endfor%}
@@ -208,6 +209,8 @@
 
 		<center>
 <br>
+{%endif%}
+
 <footer>
 <div class="foot-bar">
 <div class="foot-icon">

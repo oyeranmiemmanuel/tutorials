@@ -60,7 +60,7 @@ def fashion_page():
 
 
 @app.route("/hoodie", methods=['POST', 'GET'])
-def hoodie_page():
+def hoodie_page(): 
     category= "Hoodies"
     if request.method == 'POST':
         add_item(category=category)      
@@ -96,9 +96,10 @@ def login_page():
     return render_template('log_in.html')
 @app.route("/log-out")
 def logout_page():
+    user= current_user
     logout_user()
     
-    return "<p> Logged Out </p>"
+    return render_template("log-out.html")
 
 
 
