@@ -1,0 +1,5 @@
+flask
+flask_login
+werkzeug.security
+itsdangerous
+flask_mail
